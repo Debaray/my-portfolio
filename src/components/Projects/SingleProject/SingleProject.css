@@ -1,0 +1,17 @@
+.trans-image:hover{
+    transform : scale(1.1);
+    transition: transform 1s;
+}
+.anchor-style{
+    text-decoration: none;
+    color:black;
+}
+.anchor-style:hover{
+    text-decoration: none;
+    color:black;
+    transform : scale(1.1);
+    transition: transform 1s;
+}
+a:hover{
+    text-decoration: none;
+}
