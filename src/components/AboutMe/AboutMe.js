@@ -93,6 +93,43 @@ const AboutMe = () => {
 
                 </div>
             </div>
+            <hr className="mb-3" />
+            <div className="row d-flex align-items-center">
+                <h2 className="text-center about-head-text-style col-lg-3 col-md-9 col-sm-12 mr-3">Work Experience</h2>
+                <div className="about-text-style col-lg-8 col-md-8 col-sm-12">
+                    <h3>1. Programmer</h3>
+                    <p className="text-secondary">Punjeree Publications Ltd &nbsp;&nbsp; December,2019 -- Present </p>
+                    <ul className="mb-5">
+                        <li className="mb-2">Coordinate system testing and assist users with acceptance testing,
+                        assisting in the development and maintenance of process models.
+                        </li>
+                        <li className="mb-2">Develop significant modules of Enterprise Resource Planning(ERP)
+                        system such as Billing and Costing, Income Statement, Ledgers, Salary
+                        Management, Work Chalan, Work Order, Tax Certificate
+                        </li>
+                        <li className="mb-2">Provides documentation of development, project progress, analysis,
+                        recommendations, either individually or by actively participating in
+                        the development process.
+                        </li>
+                        <li className="mb-2">Maintaining, tuned and repaired applications to keep them performing according to technical and functional specifications, providing
+                        user support.
+                        </li>
+                        <li className="mb-2">Familiar with ASP.Net, C#, Microsoft Dot Net framework.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr className="mb-3" />
+            <div className="row d-flex align-items-center mb-5">
+                <h2 className="text-center about-head-text-style col-lg-3 col-md-9 col-sm-12 mr-3">Education</h2>
+                <div className="about-text-style col-lg-8 col-md-8 col-sm-12">
+                    <ul className="mb-5">
+                        <li className="mb-2">B.Sc in Computer Science and Engineering from Ahsanullah University of Science and Technology -- CGPA : 3.269</li>
+                        <li className="mb-2"> Higher Secondary School Certificate from Govt. Science College, Dhaka, Bangladesh.
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     );
 };
