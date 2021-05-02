@@ -4,9 +4,13 @@ import groceryDaily from '../../../images/projects/groceryDaily.png'
 import soccerMania from '../../../images/projects/soccerMania.png'
 import gotchaRides from '../../../images/projects/gotcharides.png'
 import hungryMonster from '../../../images/projects/hungryMonster.png'
-import SingleProject from '../SingleProject/SingleProject';
-import './Projects.css';
-const Projects = () => {
+import SingleProject from '../../Projects/SingleProject/SingleProject';
+import { Link } from 'react-router-dom';
+import { Button } from 'react-bootstrap';
+import './HomeProject.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight} from '@fortawesome/free-solid-svg-icons';
+const HomeProjects = () => {
     const projectDetails = [
         {
             title: "Clean It",
@@ -31,29 +35,6 @@ const Projects = () => {
             listItem3:"Admin can add or manage products."
         },
         {
-            title: "Soccer Maina",
-            image: soccerMania,
-            liveLink: "https://friendly-kilby-270bfa.netlify.app/",
-            githubLink:"https://github.com/Debaray/soccer-mania",
-            description:"This website was mainly developed for soccer fans.",
-            technologyUsed:"React.js, Bootstrap, Netlify, REST-API.",
-            listItem1:"Users can know about soccer league history.",
-            listItem2:"users can know about when they founded and which country started this league.",
-            listItem3:""
-
-        },
-        {
-            title: "Gotcha Rides",
-            image: gotchaRides,
-            liveLink: "https://react-auth-784f7.web.app/",
-            githubLink:"https://github.com/Debaray/gotcha-rides",
-            description:"Front-End Website Design for a Vehicle Service Company.",
-            technologyUsed:"React.js, Bootstrap, Firebase, REST-API.",
-            listItem1:"Users can search by their pickup and destination location then see available rides.",
-            listItem2:"Bus, Train, Bike, Car service are available",
-            listItem3:"Users should log in for getting the service. Users can log in 3 ways."
-        },
-        {
             title: "Hungry Monster",
             image: hungryMonster,
             liveLink: "https://debaray.github.io/hungry-monster/",
@@ -65,23 +46,20 @@ const Projects = () => {
             listItem3:""
         }
     ]
-    const onLoad =() =>{
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
     return (
-        <div className="container" onLoad={onLoad}>
-            <h2 className="text-center project-text-style">Projects</h2>
+        <div className="container">
+            <h2 className="text-center home-project-text-style">Projects</h2>
             <hr className="mb-5"/>
-            <div className="project-style">
+            <div className="home-project-style">
                 {
                     projectDetails.map(project => <SingleProject project={project}></SingleProject>)
                 }
             </div>
+            <Link to="/projects"><Button variant="success" className="p-2 mt-4 d-flex align-items-center justify-content-center" block>View All Projects  &nbsp; <FontAwesomeIcon icon={faArrowRight} /></Button></Link>
 
 
         </div>
     );
 };
 
-export default Projects;
+export default HomeProjects;

@@ -8,7 +8,7 @@ const SingleProject = (props) => {
     const { project } = props;
     console.log(project);
     return (
-        <div className="row border rounded p-5 mb-5">
+        <div className="row border rounded p-5 mt-5">
             <div className="col-md-6 ">
                 <a title="Live Link" href={project.liveLink} target="_blank" rel="noreferrer" >
                     <h1 className="anchor-style">{project.title}</h1></a>
