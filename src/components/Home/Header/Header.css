@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio&family=Roboto&display=swap');
+.header-style{
+    background-image: url(../../../images/backgroundImage.jpg);
+    background-position: 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section-style{
+    background-color: rgba(0, 0, 0, 0.404);
+    height: 600px;
+}
+.img-style{
+    width: 400px;
+}
+.header-text-style-animation{
+    font-family: 'Antonio', sans-serif;
+  
+}
+.download-button-style{
+   
+}
+.header-text-style{
+    font-family: 'Roboto', sans-serif;
+  
+}
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
