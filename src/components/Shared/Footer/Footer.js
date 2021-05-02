@@ -1,10 +1,10 @@
 import React from 'react';
-import styles from './Footer.module.css';
+import './Footer.css';
 const Footer = () => {
     return (
-        <div>
-            <h1>This is Footer</h1>
-        </div>
+        <footer sticky="bottom" className="copyRight text-center bg-dark">
+                <p>Copyright Debashis Ray {(new Date()).getFullYear()} All Rights Reserved</p>
+        </footer>
     );
 };
 
