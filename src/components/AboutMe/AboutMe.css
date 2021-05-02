@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@100&display=swap');
+.about-text-style{
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 1%;
+    font-size: 15px;
+  
+}
+.about-head-text-style{
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 1%;
+    font-size: 28px;
+  
+}
+.about-me-icon{
+    color: green;
+    font-size:20px;
+}

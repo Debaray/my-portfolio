@@ -55,7 +55,7 @@ const HomeProjects = () => {
                     projectDetails.map(project => <SingleProject project={project}></SingleProject>)
                 }
             </div>
-            <Link to="/projects"><Button variant="success" className="p-2 mt-4 d-flex align-items-center justify-content-center" block>View All Projects  &nbsp; <FontAwesomeIcon icon={faArrowRight} /></Button></Link>
+            <Link to="/projects"><Button variant="success" className="p-2 mt-4 home-project-button d-flex align-items-center justify-content-center" block>View All Projects  &nbsp; <FontAwesomeIcon icon={faArrowRight} /></Button></Link>
 
 
         </div>
