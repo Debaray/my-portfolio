@@ -11,8 +11,8 @@ const ContactMe = () => {
         Aos.init({duration: 1500})
     },[])
     return (
-        <div className="container">
-            <h2 data-aos="fade-down"className="text-center project-text-style">Contact Me</h2>
+        <div id="particles-js" className="container">
+            <h2 data-aos="fade-up"className="text-center project-text-style">Contact Me</h2>
                 <hr className="mb-5" />
             <div data-aos="zoom-in" className="d-flex justify-content-center mb-5"> 
                 <div className="row container">

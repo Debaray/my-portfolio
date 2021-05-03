@@ -69,7 +69,7 @@ const Header = () => {
         Aos.init({duration: 1500})
     },[])
     return (
-        <div style={{ overflow: 'hidden' }} className="d-flex justify-content-center header-style" onLoad={onLoad}>
+        <div style={{ overflow: 'hidden' }}  className="d-flex justify-content-center header-style" onLoad={onLoad}>
             <section className="row section-style d-flex align-items-center justify-content-center">
                 <div data-aos="zoom-in" className="col-lg-6 d-flex flex-column align-items-center">
                     <div data-aos="slide-right">
