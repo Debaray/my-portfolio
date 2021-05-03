@@ -1,15 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faGlobe} from '@fortawesome/free-solid-svg-icons';
 import './SingleProject.css';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 const SingleProject = (props) => {
-
+    useEffect(() =>{
+        Aos.init({duration: 1500})
+    },[])
     const { project } = props;
     console.log(project);
     return (
-        <div className="row border rounded p-5 mt-5">
-            <div className="col-md-6 ">
+        <div data-aos="fade-up" className="row border rounded p-5 mt-5">
+            <div  className="col-md-6 ">
                 <a title="Live Link" href={project.liveLink} target="_blank" rel="noreferrer" >
                     <h1 className="anchor-style">{project.title}</h1></a>
                 <p>{project.description}</p>
@@ -31,7 +35,7 @@ const SingleProject = (props) => {
                         <span className="ml-2"><FontAwesomeIcon icon={faGlobe} /> Website</span>
                     </a>
                     <a href={project.githubLink}target="_blank" className="btn btn-light mr-2 font-weight-bold" rel="noreferrer">
-                        <span className="ml-2"><FontAwesomeIcon icon={faGithub} /> GitHub</span>
+                        <span className="ml-2"><FontAwesomeIcon icon={faGithub} /> See Code</span>
                     </a>
                 </div>
             </div>

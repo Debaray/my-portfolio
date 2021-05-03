@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import cleanIt from '../../../images/projects/cleanit.png'
 import groceryDaily from '../../../images/projects/groceryDaily.png'
 import soccerMania from '../../../images/projects/soccerMania.png'
@@ -6,7 +6,12 @@ import gotchaRides from '../../../images/projects/gotcharides.png'
 import hungryMonster from '../../../images/projects/hungryMonster.png'
 import SingleProject from '../SingleProject/SingleProject';
 import './Projects.css';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 const Projects = () => {
+    useEffect(() =>{
+        Aos.init({duration: 1500})
+    },[])
     const projectDetails = [
         {
             title: "Clean It",
@@ -71,7 +76,7 @@ const Projects = () => {
     }
     return (
         <div className="container" onLoad={onLoad}>
-            <h2 className="text-center project-text-style">Projects</h2>
+            <h2 data-aos="fade-down" className="text-center project-text-style">Projects</h2>
             <hr className="mb-5"/>
             <div className="project-style">
                 {

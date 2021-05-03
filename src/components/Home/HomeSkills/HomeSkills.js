@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 const HomeSkills = () => {
+    useEffect(() =>{
+        Aos.init({duration: 1500})
+    },[])
     return (
         <div className="container">
-            <h2 className="text-center home-project-text-style">Skills</h2>
+            <h2 data-aos="fade-up" className="text-center home-project-text-style">Skills</h2>
             <hr className="mb-5" />
-            <div className="row d-flex justify-content-center border">
+            <div data-aos="flip-left" className="row d-flex justify-content-center border">
                 <div className="about-text-style col-12 d-flex justify-content-center">
                     <div>
                         <div className="row mb-3">

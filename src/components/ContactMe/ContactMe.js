@@ -1,17 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Button } from 'react-bootstrap';
 import './Contact.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMapMarkerAlt, faEnvelope, faMobileAlt } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF, faInstagram, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 const ContactMe = () => {
+    useEffect(() =>{
+        Aos.init({duration: 1500})
+    },[])
     return (
         <div className="container">
-            <h2 className="text-center project-text-style">Contact Me</h2>
+            <h2 data-aos="fade-down"className="text-center project-text-style">Contact Me</h2>
                 <hr className="mb-5" />
-            <div className="d-flex justify-content-center mb-5"> 
+            <div data-aos="zoom-in" className="d-flex justify-content-center mb-5"> 
                 <div className="row container">
-                    <div className="col-sm-12 col-lg-7 send-message">
+                    <div data-aos="slide-right" className="col-sm-12 col-lg-7 send-message">
                         <h3 className="mt-3">Send Message</h3>
                         <form id="fcf-form-id" className="fcf-form-className">
                             <div className="fcf-form-group">
@@ -41,7 +46,7 @@ const ContactMe = () => {
 
                         </form>
                     </div>
-                    <div className="col-sm-12  col-lg-4 get-in-touch ml-lg-5">
+                    <div data-aos="slide-left" className="col-sm-12  col-lg-4 get-in-touch ml-lg-5">
                         <h3 className="mt-3">Get in Touch</h3>
                         <hr />
                         <div className="d-flex align-items-center justify-content-start">

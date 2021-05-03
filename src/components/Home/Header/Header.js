@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Header.css';
 import image from '../../../images/myImage.JPG';
 import { Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCloudDownloadAlt, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 var TxtType = function (el, toRotate, period) {
     this.toRotate = toRotate;
@@ -63,11 +65,14 @@ const onLoad = () => {
     document.body.appendChild(css);
 };
 const Header = () => {
+    useEffect(() =>{
+        Aos.init({duration: 1500})
+    },[])
     return (
         <div style={{ overflow: 'hidden' }} className="d-flex justify-content-center header-style" onLoad={onLoad}>
             <section className="row section-style d-flex align-items-center justify-content-center">
-                <div className="col-lg-6 d-flex flex-column align-items-center">
-                    <div>
+                <div data-aos="zoom-in" className="col-lg-6 d-flex flex-column align-items-center">
+                    <div data-aos="slide-right">
                         <h3 className="header-text-style">👋 Hello I'M</h3>
                         <h1 className="header-text-style text-white" >DEBASHIS RAY</h1>
                         <h3 class="typewrite header-text-style-animation" data-period="1000" data-type='[ "MERN Stack Developer", "Frontend Web Developer", "Love to Develop Website", "Using...","⚛️ React.js","Node.js","Express.js","MongoDB.js","And more..."]'>
@@ -78,8 +83,8 @@ const Header = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-6 d-flex justify-content-center">
-                    <img className="img-fluid w-75 img-thumbnail" src={image} alt="" />
+                <div data-aos="zoom-in" className="col-lg-6 d-flex justify-content-center">
+                    <img data-aos="slide-left" className="img-fluid w-75 img-thumbnail" src={image} alt="" />
                 </div>
             </section>
         </div>
