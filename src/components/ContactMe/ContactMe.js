@@ -46,7 +46,7 @@ const ContactMe = () => {
 
                         </form>
                     </div>
-                    <div data-aos="slide-left" className="col-sm-12  col-lg-4 get-in-touch ml-lg-5">
+                    <div data-aos="slide-up" className="col-sm-12  col-lg-4 get-in-touch ml-lg-5">
                         <h3 className="mt-3">Get in Touch</h3>
                         <hr />
                         <div className="d-flex align-items-center justify-content-start">
