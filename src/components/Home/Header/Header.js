@@ -78,7 +78,7 @@ const Header = () => {
                         <h3 class="typewrite header-text-style-animation" data-period="1000" data-type='[ "MERN Stack Developer", "Frontend Web Developer", "Love to Develop Website", "Using...","⚛️ React.js","Node.js","Express.js","MongoDB.js","And more..."]'>
                         </h3>
                         <div>
-                            <a href="https://drive.google.com/uc?export=download&id=1KSwHDJS4R9g4IAdoHF5r-M0F1natJcMS" target="_blank" rel="noreferrer"><Button className="pl-4 pr-4 pt-2 pb-2 mt-2 download-button-style" variant="primary"><FontAwesomeIcon icon={faCloudDownloadAlt} /> Download Resume</Button></a>
+                            <a href="https://drive.google.com/uc?export=download&id=1XmpBDsE_yZ5tQgHYyVn3nfT8cp-JZz8Q" target="_blank" rel="noreferrer"><Button className="pl-4 pr-4 pt-2 pb-2 mt-2 download-button-style" variant="primary"><FontAwesomeIcon icon={faCloudDownloadAlt} /> Download Resume</Button></a>
                             <Link to="/contactme"><Button className="pl-4 pr-4 mt-2 ml-4 pt-2 pb-2" variant="success"><FontAwesomeIcon icon={faPaperPlane} /> Contact Me</Button></Link>
                         </div>
                     </div>
