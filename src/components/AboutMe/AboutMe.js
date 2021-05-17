@@ -13,7 +13,7 @@ const AboutMe = () => {
     return (
         <div className="container">
             <div className="mt-4 mb-5 d-flex align-items-center justify-content-center">
-                <a data-aos="slide-right" href="https://drive.google.com/uc?export=download&id=1KSwHDJS4R9g4IAdoHF5r-M0F1natJcMS" target="_blank" rel="noreferrer"><Button className="pl-4 pr-4 pt-2 pb-2 mt-2 download-button-style" variant="primary"><FontAwesomeIcon icon={faCloudDownloadAlt} /> Download Resume</Button></a>
+                <a data-aos="slide-right" href="https://drive.google.com/uc?export=download&id=1XmpBDsE_yZ5tQgHYyVn3nfT8cp-JZz8Q" target="_blank" rel="noreferrer"><Button className="pl-4 pr-4 pt-2 pb-2 mt-2 download-button-style" variant="primary"><FontAwesomeIcon icon={faCloudDownloadAlt} /> Download Resume</Button></a>
                 <Link data-aos="slide-left" to="/contactme"><Button className="pl-4 pr-4 mt-2 ml-4 pt-2 pb-2" variant="success"><FontAwesomeIcon icon={faPaperPlane} /> Contact Me</Button></Link>
             </div>
             <hr className="mb-3" />
