@@ -3,8 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import NavBar from './components/Shared/NavBar/NavBar';
 import Projects from './components/Projects/Projects/Projects';

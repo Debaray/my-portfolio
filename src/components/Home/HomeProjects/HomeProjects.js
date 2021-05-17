@@ -57,7 +57,7 @@ const HomeProjects = () => {
             <hr className="mb-5"/>
             <div className="home-project-style">
                 {
-                    projectDetails.map(project => <SingleProject project={project}></SingleProject>)
+                    projectDetails.map(project => <SingleProject key={project.title} project={project}></SingleProject>)
                 }
             </div>
             <Link to="/projects"><Button variant="success" className="p-2 mt-4 home-project-button d-flex align-items-center justify-content-center" block>View All Projects  &nbsp; <FontAwesomeIcon icon={faArrowRight} /></Button></Link>

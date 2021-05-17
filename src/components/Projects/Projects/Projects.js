@@ -80,7 +80,7 @@ const Projects = () => {
             <hr className="mb-5"/>
             <div className="project-style">
                 {
-                    projectDetails.map(project => <SingleProject project={project}></SingleProject>)
+                    projectDetails.map(project => <SingleProject key={project.title} project={project}></SingleProject>)
                 }
             </div>
 

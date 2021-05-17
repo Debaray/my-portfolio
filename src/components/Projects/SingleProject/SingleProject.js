@@ -10,7 +10,6 @@ const SingleProject = (props) => {
         Aos.init({duration: 1500})
     },[])
     const { project } = props;
-    console.log(project);
     return (
         <div data-aos="fade-up" className="row border rounded p-5 mt-5">
             <div  className="col-md-6 ">
